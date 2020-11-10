@@ -12,9 +12,9 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-ground=new Ground(400,680,800,20);
-ball=new Ball(100,650,30);
-dustbin=new Dustbin(600,670);
+        ground=new Ground(400,680,800,20);
+        ball=new Ball(100,650,30);
+        dustbin=new Dustbin(600,670);
 
 	Engine.run(engine);
   
@@ -22,18 +22,23 @@ dustbin=new Dustbin(600,670);
 
 
 function draw() {
-  rectMode(CENTER);
   background(0);
+	
+  rectMode(CENTER);
+	
   ground.display();
+	
   ball.display();
   dustbin.display();
+	
   drawSprites();
  
 }
+
 function keyPressed(){
-if(keyCode===UP_ARROW){
-Matter.Body.applyForce(ball.body,ball.body.position,{x:85,y:-85})
-}
+	if(keyCode===UP_ARROW){
+		Matter.Body.applyForce(ball.body,ball.body.position,{x:85,y:-85})
+	}
 
 }
 
