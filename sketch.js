@@ -22,17 +22,17 @@ function setup() {
 
 
 function draw() {
-  background(0);
+	 background(0);
 	
-  rectMode(CENTER);
+ 	rectMode(CENTER);
 	
-  ground.display();
+  	ground.display();
 	
-  ball.display();
-  dustbin.display();
+  	ball.display();
+  	dustbin.display();
 	
-  drawSprites();
- 
+  	drawSprites();
+ 	
 }
 
 function keyPressed(){
